@@ -65,7 +65,7 @@ class ABTest:
         while current_date <= self.end_date:
             self.simulate_day(current_date)
             current_date += timedelta(days=1)
-    
+             
     def get_results(self):
         control_clicks = sum(user.clicks for user in self.control_users)
         control_purchases = sum(user.purchases for user in self.control_users)
